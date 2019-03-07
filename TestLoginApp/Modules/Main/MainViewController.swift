@@ -35,7 +35,7 @@ final class MainViewController: UIViewController {
         authButton.setTitle(String.Main.AuthButton.title.localized(),
                              for: .normal)
         authButton.titleLabel?.font = .textStyle5
-        authButton.tintColor = .customWhite
+        authButton.tintColor = .white
         authButton.contentEdgeInsets = UIEdgeInsets.init(top: C.AuthButton.Insents.top,
                                                           left: C.AuthButton.Insents.left,
                                                           bottom: C.AuthButton.Insents.bottom,

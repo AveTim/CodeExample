@@ -24,10 +24,13 @@ final class LoginInteractor {
 extension LoginInteractor: LoginInteractorInput {
 
     func loadWeather(query: String) {
+        ProgressManager.show()
         networkService.loadWeatherFor(query: query,
                                successCallback: { [weak self] (weatherResponse) in
+                                ProgressManager.hide()
                                 self?.output.didLoadWeather(weatherResponse)
             }, errorCallback: { [weak self] (error) in
+                ProgressManager.hide()
                 self?.output.didReceivedAnError(error)
         })
     }

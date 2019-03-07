@@ -99,7 +99,7 @@ final class LoginViewController: UIViewController {
         loginButton.setTitle(String.Auth.LoginButton.title.localized(),
                              for: .normal)
         loginButton.titleLabel?.font = .textStyle5
-        loginButton.tintColor = .customWhite
+        loginButton.tintColor = .white
         loginButton.contentEdgeInsets = UIEdgeInsets.init(top: C.LoginButton.Insents.top,
                                                           left: C.LoginButton.Insents.left,
                                                           bottom: C.LoginButton.Insents.bottom,
