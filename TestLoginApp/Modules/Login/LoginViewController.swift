@@ -95,7 +95,7 @@ final class LoginViewController: UIViewController {
         // Login
         loginButton.backgroundColor = .tangerine
         loginButton.layer.borderColor = UIColor.veryLightPinkTwo.cgColor
-        loginButton.clipsToBounds = true
+        loginButton.layer.masksToBounds = true
         loginButton.setTitle(String.Auth.LoginButton.title.localized(),
                              for: .normal)
         loginButton.titleLabel?.font = .textStyle5
@@ -114,6 +114,12 @@ final class LoginViewController: UIViewController {
     }
     
     private func setupKeyboard() {
+        // hide by click outside
+        let tap = UITapGestureRecognizer(target: self,
+                                         action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+        
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillShow),
                                                name: UIResponder.keyboardWillShowNotification,
@@ -138,6 +144,10 @@ final class LoginViewController: UIViewController {
         output.didTapRegistration()
     }
     
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     // MARK: Keyboard scrolling
     @objc private func keyboardWillShow(notification: NSNotification) {
         guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
@@ -150,15 +160,20 @@ final class LoginViewController: UIViewController {
         }
         
         let keyboardContentInsets = UIEdgeInsets(top: 0, left: 0, bottom: bottomInset, right: 0)
-        scrollView.contentInset = keyboardContentInsets
-        scrollView.scrollIndicatorInsets = keyboardContentInsets
-        
-        scrollView.scrollRectToVisible(loginContentView.frame, animated: true)
+        UIView.animate(withDuration: TimeInterval(C.Keyboard.animationDuration)) { [weak self] in
+            guard let `self` = self else { return }
+            self.scrollView.contentInset = keyboardContentInsets
+            self.scrollView.scrollIndicatorInsets = keyboardContentInsets
+            
+            self.scrollView.scrollRectToVisible(self.loginContentView.frame, animated: true)
+        }
     }
     
     @objc private func keyboardWillHide(notification: NSNotification) {
-        scrollView.contentInset = UIEdgeInsets.zero
-        scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
+        UIView.animate(withDuration: TimeInterval(C.Keyboard.animationDuration)) { [weak self] in
+            self?.scrollView.contentInset = UIEdgeInsets.zero
+            self?.scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
+        }
     }
     
 }
@@ -170,6 +185,10 @@ extension LoginViewController: LoginViewInput {
 
 // MARK: - Constants
 private enum C {
+    
+    enum Keyboard {
+        static let animationDuration: Double = 0.3
+    }
     
     enum ForgotPasswordButton {
         static let cornerRadius: CGFloat = 4
@@ -191,5 +210,6 @@ private enum C {
             static let left: CGFloat = 51
         }
     }
+    
     
 }

@@ -63,6 +63,7 @@ extension LoginPresenter: LoginViewOutput {
             view.showMessage(String.Auth.Error.incorrectEmail.localized())
             return
         }
+        
         let result = validatePassword(password)
         guard result.isValid else {
             view.showMessage(result.errorMessage)

@@ -22,9 +22,14 @@ final class SeparatorView: UIView {
         commonInit()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        heightAnchor.constraint(equalToConstant: C.separatorHeight).isActive = true
+    }
+    
     private func commonInit() {
         translatesAutoresizingMaskIntoConstraints = false
-        heightAnchor.constraint(equalToConstant: C.separatorHeight).isActive = true
         
         backgroundColor = .veryLightPink
     }
