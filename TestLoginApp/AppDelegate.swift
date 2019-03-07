@@ -15,7 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let loginVC = UIStoryboard(name: "Login",
+                                   bundle: nil).instantiateInitialViewController() as! LoginViewController
+//        navigationController?.pushViewController(loginVC, animated: true)
+        
+        let rootVC = UIStoryboard.init(name: "Main",
+                                       bundle: nil).instantiateInitialViewController() as! MainViewController
+        window.rootViewController = UINavigationController.init(rootViewController: rootVC)
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        // clear back button
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear],
+                                                            for: UIControl.State.highlighted)
+        
+        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().tintColor = .darkSkyBlueTwo
+        UINavigationBar.appearance().titleTextAttributes = [ .font: UIFont.textStyle7 ]
+
         return true
     }
 

@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224A316822309A8700A103CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 224A316722309A8600A103CD /* Localizable.strings */; };
+		224A316A22309A9F00A103CD /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316922309A9F00A103CD /* LocalizationConstants.swift */; };
+		224A316C22309B2800A103CD /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316B22309B2800A103CD /* String+Localization.swift */; };
+		224A316E2230A10200A103CD /* UIFont+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316D2230A10200A103CD /* UIFont+Styles.swift */; };
+		224A31702230A8A000A103CD /* UIColor+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316F2230A8A000A103CD /* UIColor+Styles.swift */; };
 		22E2676422304D50004DB8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2676322304D50004DB8BB /* AppDelegate.swift */; };
-		22E2676622304D50004DB8BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2676522304D50004DB8BB /* ViewController.swift */; };
+		22E2676622304D50004DB8BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2676522304D50004DB8BB /* MainViewController.swift */; };
 		22E2676922304D50004DB8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E2676722304D50004DB8BB /* Main.storyboard */; };
 		22E2676B22304D53004DB8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E2676A22304D53004DB8BB /* Assets.xcassets */; };
 		22E2676E22304D53004DB8BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E2676C22304D53004DB8BB /* LaunchScreen.storyboard */; };
+		22E2677B22305134004DB8BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2677A22305134004DB8BB /* LoginViewController.swift */; };
+		22E2677D223052D3004DB8BB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E2677C223052D3004DB8BB /* Login.storyboard */; };
+		22E2678C22305A3A004DB8BB /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22E2678022305A39004DB8BB /* SFUIText-Medium.ttf */; };
+		22E2678E22305A3A004DB8BB /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22E2678222305A39004DB8BB /* SFUIText-Regular.ttf */; };
+		22E267A0223076C7004DB8BB /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2679F223076C7004DB8BB /* SeparatorView.swift */; };
+		22E267A322307AED004DB8BB /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E267A222307AED004DB8BB /* UIColor.swift */; };
+		F4EE98E4187A5E2471BE8D01 /* Pods_TestLoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BD58A6C96747074CAF5E0 /* Pods_TestLoginApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224A316722309A8600A103CD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		224A316922309A9F00A103CD /* LocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
+		224A316B22309B2800A103CD /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		224A316D2230A10200A103CD /* UIFont+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Styles.swift"; sourceTree = "<group>"; };
+		224A316F2230A8A000A103CD /* UIColor+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Styles.swift"; sourceTree = "<group>"; };
 		22E2676022304D50004DB8BB /* TestLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2676322304D50004DB8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22E2676522304D50004DB8BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22E2676522304D50004DB8BB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		22E2676822304D50004DB8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E2676A22304D53004DB8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E2676D22304D53004DB8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E2676F22304D53004DB8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E2677A22305134004DB8BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		22E2677C223052D3004DB8BB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		22E2678022305A39004DB8BB /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		22E2678222305A39004DB8BB /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		22E2679F223076C7004DB8BB /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		22E267A222307AED004DB8BB /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6E9BD58A6C96747074CAF5E0 /* Pods_TestLoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestLoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		851BACE196065486A43C6816 /* Pods-TestLoginApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLoginApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestLoginApp/Pods-TestLoginApp.release.xcconfig"; sourceTree = "<group>"; };
+		F999FF56E3940F2F6EB0E642 /* Pods-TestLoginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLoginApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestLoginApp/Pods-TestLoginApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4EE98E4187A5E2471BE8D01 /* Pods_TestLoginApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B568A7D9FCAA6F11FA6686D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E9BD58A6C96747074CAF5E0 /* Pods_TestLoginApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		224A316622309A6F00A103CD /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				224A316722309A8600A103CD /* Localizable.strings */,
+				224A316922309A9F00A103CD /* LocalizationConstants.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		22E2675722304D50004DB8BB = {
 			isa = PBXGroup;
 			children = (
 				22E2676222304D50004DB8BB /* TestLoginApp */,
 				22E2676122304D50004DB8BB /* Products */,
+				EDFD5A87120EE24B9F8472FD /* Pods */,
+				1B568A7D9FCAA6F11FA6686D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,89 @@
 		22E2676222304D50004DB8BB /* TestLoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				22E267A122307ADF004DB8BB /* Extensions */,
+				22E2677E22305A1A004DB8BB /* Resources */,
+				22E2677722304E8B004DB8BB /* Modules */,
 				22E2676322304D50004DB8BB /* AppDelegate.swift */,
-				22E2676522304D50004DB8BB /* ViewController.swift */,
-				22E2676722304D50004DB8BB /* Main.storyboard */,
 				22E2676A22304D53004DB8BB /* Assets.xcassets */,
 				22E2676C22304D53004DB8BB /* LaunchScreen.storyboard */,
 				22E2676F22304D53004DB8BB /* Info.plist */,
 			);
 			path = TestLoginApp;
+			sourceTree = "<group>";
+		};
+		22E2677722304E8B004DB8BB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				22E2677822304EAF004DB8BB /* Main */,
+				22E2677922304EBE004DB8BB /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		22E2677822304EAF004DB8BB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				22E2676722304D50004DB8BB /* Main.storyboard */,
+				22E2676522304D50004DB8BB /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		22E2677922304EBE004DB8BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22E2677C223052D3004DB8BB /* Login.storyboard */,
+				22E2677A22305134004DB8BB /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		22E2677E22305A1A004DB8BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				224A316622309A6F00A103CD /* Localization */,
+				22E26798223075E4004DB8BB /* Views */,
+				22E2677F22305A26004DB8BB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22E2677F22305A26004DB8BB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				22E2678022305A39004DB8BB /* SFUIText-Medium.ttf */,
+				22E2678222305A39004DB8BB /* SFUIText-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		22E26798223075E4004DB8BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22E2679F223076C7004DB8BB /* SeparatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22E267A122307ADF004DB8BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22E267A222307AED004DB8BB /* UIColor.swift */,
+				224A316B22309B2800A103CD /* String+Localization.swift */,
+				224A316D2230A10200A103CD /* UIFont+Styles.swift */,
+				224A316F2230A8A000A103CD /* UIColor+Styles.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDFD5A87120EE24B9F8472FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F999FF56E3940F2F6EB0E642 /* Pods-TestLoginApp.debug.xcconfig */,
+				851BACE196065486A43C6816 /* Pods-TestLoginApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E2677222304D53004DB8BB /* Build configuration list for PBXNativeTarget "TestLoginApp" */;
 			buildPhases = (
+				7CB721DBE6123863AFA20B77 /* [CP] Check Pods Manifest.lock */,
 				22E2675C22304D50004DB8BB /* Sources */,
 				22E2675D22304D50004DB8BB /* Frameworks */,
 				22E2675E22304D50004DB8BB /* Resources */,
@@ -122,21 +244,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224A316822309A8700A103CD /* Localizable.strings in Resources */,
+				22E2677D223052D3004DB8BB /* Login.storyboard in Resources */,
 				22E2676E22304D53004DB8BB /* LaunchScreen.storyboard in Resources */,
 				22E2676B22304D53004DB8BB /* Assets.xcassets in Resources */,
+				22E2678E22305A3A004DB8BB /* SFUIText-Regular.ttf in Resources */,
 				22E2676922304D50004DB8BB /* Main.storyboard in Resources */,
+				22E2678C22305A3A004DB8BB /* SFUIText-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CB721DBE6123863AFA20B77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestLoginApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22E2675C22304D50004DB8BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E2676622304D50004DB8BB /* ViewController.swift in Sources */,
+				22E2677B22305134004DB8BB /* LoginViewController.swift in Sources */,
+				224A316A22309A9F00A103CD /* LocalizationConstants.swift in Sources */,
+				224A316E2230A10200A103CD /* UIFont+Styles.swift in Sources */,
+				22E267A322307AED004DB8BB /* UIColor.swift in Sources */,
+				22E2676622304D50004DB8BB /* MainViewController.swift in Sources */,
+				22E267A0223076C7004DB8BB /* SeparatorView.swift in Sources */,
 				22E2676422304D50004DB8BB /* AppDelegate.swift in Sources */,
+				224A316C22309B2800A103CD /* String+Localization.swift in Sources */,
+				224A31702230A8A000A103CD /* UIColor+Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +434,13 @@
 		};
 		22E2677322304D53004DB8BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F999FF56E3940F2F6EB0E642 /* Pods-TestLoginApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2WMTT4276;
 				INFOPLIST_FILE = TestLoginApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +448,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.handh.TestLoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		22E2677422304D53004DB8BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 851BACE196065486A43C6816 /* Pods-TestLoginApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2WMTT4276;
 				INFOPLIST_FILE = TestLoginApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.handh.TestLoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

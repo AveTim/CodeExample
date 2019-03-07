@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  TestLoginApp
+
+  Created by Tim on 3/7/19.
+  Copyright © 2019 Heads and Hands. All rights reserved.
+*/
+
+"Auth.title" = "Авторизация";
+"Auth.EnterEmail.title" = "Почта";
+"Auth.EnterEmail.placeholder" = "Введите email";
+"Auth.EnterPassword.title" = "Пароль";
+"Auth.EnterPassword.placeholder" = "Введите пароль";
+"Auth.ForgotPasswordButton.title" = "Забыли пароль?";
+"Auth.LoginButton.title" = "Войти";
+"Auth.RegistrationButton.title" = "У меня еще нет аккаунта. Создать.";
