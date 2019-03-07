@@ -15,9 +15,7 @@ final class LoginPresenter {
     var router: LoginRouterInput!
     
     private let minimumPasswordLenght = 6
-    
-    init() { }
-    
+        
     private func validatePassword(_ password: String?) -> (isValid: Bool, errorMessage: String) {
         var errorMessage: String = ""
         let password = password ?? ""

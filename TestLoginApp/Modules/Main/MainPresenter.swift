@@ -13,9 +13,7 @@ final class MainPresenter {
     weak var view: MainViewInput!
     var interactor: MainInteractorInput!
     var router: MainRouterInput!
-    
-    init() { }
-    
+        
 }
 
 // MARK: - MainViewOutput
