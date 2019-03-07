@@ -14,7 +14,7 @@ extension UIViewController {
         let alert = UIAlertController(title: nil,
                                       message: message,
                                       preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: LS.Global.ok.localized(),
+        alert.addAction(UIAlertAction(title: String.Global.ok.localized(),
                                       style: .default,
                                       handler: nil))
         DispatchQueue.main.async {

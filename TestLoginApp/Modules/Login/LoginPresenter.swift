@@ -25,19 +25,19 @@ final class LoginPresenter {
         
         if password.count < minimumPasswordLenght {
             isPasswordValid = false
-            errorMessage += LS.Auth.Error.Password.toShort.localized() + LS.Global.space.localized()
+            errorMessage += String.Auth.Error.Password.toShort.localized() + String.Global.space.localized()
         }
         if password.rangeOfCharacter(from: CharacterSet.uppercaseLetters) == nil {
             isPasswordValid = false
-            errorMessage += LS.Auth.Error.Password.oneUppercase.localized() + LS.Global.space.localized()
+            errorMessage += String.Auth.Error.Password.oneUppercase.localized() + String.Global.space.localized()
         }
         if password.rangeOfCharacter(from: CharacterSet.lowercaseLetters) == nil {
             isPasswordValid = false
-            errorMessage += LS.Auth.Error.Password.oneLowercase.localized() + LS.Global.space.localized()
+            errorMessage += String.Auth.Error.Password.oneLowercase.localized() + String.Global.space.localized()
         }
         if password.rangeOfCharacter(from: CharacterSet.decimalDigits) == nil {
             isPasswordValid = false
-            errorMessage += LS.Auth.Error.Password.oneDigit.localized() + LS.Global.space.localized()
+            errorMessage += String.Auth.Error.Password.oneDigit.localized() + String.Global.space.localized()
         }
         
         return (isValid: isPasswordValid,
@@ -60,7 +60,7 @@ extension LoginPresenter: LoginViewOutput {
     func didTapLogin(email: String?, password: String?) {
         guard let email = email,
               !email.isEmpty else {
-            view.showMessage(LS.Auth.Error.incorrectEmail.localized())
+            view.showMessage(String.Auth.Error.incorrectEmail.localized())
             return
         }
         let result = validatePassword(password)

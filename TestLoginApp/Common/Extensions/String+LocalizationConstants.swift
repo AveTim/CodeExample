@@ -1,5 +1,5 @@
 //
-//  LocalizationConstants.swift
+//  String+LocalizationConstants.swift
 //  TestLoginApp
 //
 //  Created by Tim on 3/7/19.
@@ -8,62 +8,61 @@
 
 import Foundation
 
-struct LS {
+extension String {
     
     // MARK: - Global
-    struct Global {
+    enum Global {
         static let ok = "Global.ok"
         static let space = "Global.space"
         static let error = "Global.error"
     }
     
     // MARK: - Main
-    struct Main {
+    enum Main {
         static let title = "Main.title"
         
-        struct AuthButton {
+        enum AuthButton {
             static let title = "Main.AuthButton.title"
         }
     }
     
     // MARK: - Auth
-    struct Auth {
+    enum Auth {
         static let title = "Auth.title"
         
-        struct EnterEmail {
+        enum EnterEmail {
             static let title = "Auth.EnterEmail.title"
             static let placeholder = "Auth.EnterEmail.placeholder"
         }
         
-        struct EnterPassword {
+        enum EnterPassword {
             static let title = "Auth.EnterPassword.title"
             static let placeholder = "Auth.EnterPassword.placeholder"
         }
         
-        struct ForgotPasswordButton {
+        enum ForgotPasswordButton {
             static let title = "Auth.ForgotPasswordButton.title"
         }
         
-        struct LoginButton {
+        enum LoginButton {
             static let title = "Auth.LoginButton.title"
         }
         
-        struct RegistrationButton {
+        enum RegistrationButton {
             static let title = "Auth.RegistrationButton.title"
         }
-   
-        struct Error {
+        
+        enum Error {
             static let incorrectEmail = "Auth.Error.Email.incorrect"
             
-            struct Password {
+            enum Password {
                 static let incorrect = "Auth.Error.Password.incorrect"
                 static let toShort = "Auth.Error.Password.toShort"
                 static let oneUppercase = "Auth.Error.Password.oneUppercase"
                 static let oneLowercase = "Auth.Error.Password.oneLowercase"
                 static let oneDigit = "Auth.Error.Password.oneDigit"
             }
-        
+            
         }
     }
-    
 }

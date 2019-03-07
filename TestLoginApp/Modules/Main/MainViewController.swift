@@ -26,13 +26,13 @@ final class MainViewController: UIViewController {
     }
     
     private func setupUI() {
-        navigationItem.title = LS.Main.title.localized()
+        navigationItem.title = String.Main.title.localized()
         
         authButton.isExclusiveTouch = true
         authButton.backgroundColor = .tangerine
         authButton.layer.borderColor = UIColor.veryLightPinkTwo.cgColor
         authButton.clipsToBounds = true
-        authButton.setTitle(LS.Main.AuthButton.title.localized(),
+        authButton.setTitle(String.Main.AuthButton.title.localized(),
                              for: .normal)
         authButton.titleLabel?.font = .textStyle5
         authButton.tintColor = .customWhite

@@ -40,7 +40,7 @@ struct NetworkServiceImpl: NetworkService {
                           let errorMessage = errorResult.errorMessage {
                     errorCallback(errorMessage)
                 } else {
-                    errorCallback(LS.Global.error)
+                    errorCallback(String.Global.error.localized())
                 }
             case .failure(let error):
                 errorCallback(error.localizedDescription)

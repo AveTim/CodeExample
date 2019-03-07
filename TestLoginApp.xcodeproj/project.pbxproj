@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		224A316822309A8700A103CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 224A316722309A8600A103CD /* Localizable.strings */; };
-		224A316A22309A9F00A103CD /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316922309A9F00A103CD /* LocalizationConstants.swift */; };
 		224A316C22309B2800A103CD /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316B22309B2800A103CD /* String+Localization.swift */; };
 		224A316E2230A10200A103CD /* UIFont+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316D2230A10200A103CD /* UIFont+Styles.swift */; };
 		224A31702230A8A000A103CD /* UIColor+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316F2230A8A000A103CD /* UIColor+Styles.swift */; };
@@ -31,6 +30,7 @@
 		224A31A22230D75A00A103CD /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31A12230D75900A103CD /* ErrorResponse.swift */; };
 		224A31A42230DFED00A103CD /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31A32230DFED00A103CD /* WeatherResponse.swift */; };
 		224A31A62230F36800A103CD /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31A52230F36800A103CD /* UIViewController.swift */; };
+		224A31A82231065D00A103CD /* String+LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31A72231065D00A103CD /* String+LocalizationConstants.swift */; };
 		22E2676422304D50004DB8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2676322304D50004DB8BB /* AppDelegate.swift */; };
 		22E2676622304D50004DB8BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2676522304D50004DB8BB /* MainViewController.swift */; };
 		22E2676922304D50004DB8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E2676722304D50004DB8BB /* Main.storyboard */; };
@@ -47,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		224A316722309A8600A103CD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		224A316922309A9F00A103CD /* LocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
 		224A316B22309B2800A103CD /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		224A316D2230A10200A103CD /* UIFont+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Styles.swift"; sourceTree = "<group>"; };
 		224A316F2230A8A000A103CD /* UIColor+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Styles.swift"; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		224A31A12230D75900A103CD /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		224A31A32230DFED00A103CD /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		224A31A52230F36800A103CD /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		224A31A72231065D00A103CD /* String+LocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizationConstants.swift"; sourceTree = "<group>"; };
 		22E2676022304D50004DB8BB /* TestLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2676322304D50004DB8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E2676522304D50004DB8BB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				224A316722309A8600A103CD /* Localizable.strings */,
-				224A316922309A9F00A103CD /* LocalizationConstants.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -265,6 +264,7 @@
 			children = (
 				22E267A222307AED004DB8BB /* UIColor.swift */,
 				224A316B22309B2800A103CD /* String+Localization.swift */,
+				224A31A72231065D00A103CD /* String+LocalizationConstants.swift */,
 				224A316D2230A10200A103CD /* UIFont+Styles.swift */,
 				224A316F2230A8A000A103CD /* UIColor+Styles.swift */,
 				224A31942230C17800A103CD /* UIViewController+Messages.swift */,
@@ -403,11 +403,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E2677B22305134004DB8BB /* LoginViewController.swift in Sources */,
+				224A31A82231065D00A103CD /* String+LocalizationConstants.swift in Sources */,
 				224A318B2230BA0100A103CD /* MainRouter.swift in Sources */,
 				224A318D2230BA0100A103CD /* MainProtocols.swift in Sources */,
 				224A318F2230BA0100A103CD /* MainInteractor.swift in Sources */,
 				224A31952230C17800A103CD /* UIViewController+Messages.swift in Sources */,
-				224A316A22309A9F00A103CD /* LocalizationConstants.swift in Sources */,
 				224A316E2230A10200A103CD /* UIFont+Styles.swift in Sources */,
 				224A31A42230DFED00A103CD /* WeatherResponse.swift in Sources */,
 				22E267A322307AED004DB8BB /* UIColor.swift in Sources */,

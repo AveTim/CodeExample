@@ -23,8 +23,7 @@ extension String {
             NSString(format: localized(), locale: NSLocale.current, arguments: $0) as String
         }
     }
-    
-    
+        
     public func localized(using tableName: String?) -> String {
         return localized(using: tableName, in: .main)
     }

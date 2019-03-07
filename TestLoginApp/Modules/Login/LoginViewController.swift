@@ -10,7 +10,7 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties
     var output: LoginViewOutput!
 
     // MARK: Outlets
@@ -55,35 +55,35 @@ final class LoginViewController: UIViewController {
     }
     
     private func setupUI() {
-        navigationItem.title = LS.Auth.title.localized()
+        navigationItem.title = String.Auth.title.localized()
         
         // Email
-        emailTitleLabel.text = LS.Auth.EnterEmail.title.localized()
+        emailTitleLabel.text = String.Auth.EnterEmail.title.localized()
         emailTitleLabel.font = UIFont.textStyle4
         emailTitleLabel.textColor = .warmGrey
         
         emailTextField.keyboardType = .emailAddress
         emailTextField.autocorrectionType = .no
         emailTextField.font = UIFont.textStyle3
-        emailTextField.attributedPlaceholder = NSAttributedString(string: LS.Auth.EnterEmail.placeholder.localized(),
+        emailTextField.attributedPlaceholder = NSAttributedString(string: String.Auth.EnterEmail.placeholder.localized(),
                                                                   attributes: [ .foregroundColor: UIColor.lightGray,
                                                                                 .font: UIFont.textStyle3 ])
         
         // Password
-        passwordTitleLabel.text = LS.Auth.EnterPassword.title.localized()
+        passwordTitleLabel.text = String.Auth.EnterPassword.title.localized()
         passwordTitleLabel.font = UIFont.textStyle4
         passwordTitleLabel.textColor = .warmGrey
         
         passwordTextField.autocorrectionType = .no
         passwordTextField.isSecureTextEntry = true
         passwordTextField.font = UIFont.textStyle3
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: LS.Auth.EnterPassword.placeholder.localized(),
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: String.Auth.EnterPassword.placeholder.localized(),
                                                                      attributes: [ .foregroundColor: UIColor.lightGray,
                                                                                    .font: UIFont.textStyle3 ])
         // Forgot password
         forgotPasswordButton.layer.borderColor = UIColor.veryLightPinkTwo.cgColor
         forgotPasswordButton.layer.borderWidth = C.ForgotPasswordButton.borderWidth
-        forgotPasswordButton.setTitle(LS.Auth.ForgotPasswordButton.title.localized(),
+        forgotPasswordButton.setTitle(String.Auth.ForgotPasswordButton.title.localized(),
                                       for: .normal)
         forgotPasswordButton.titleLabel?.font = UIFont.textStyle6
         forgotPasswordButton.tintColor = .warmGrey
@@ -96,7 +96,7 @@ final class LoginViewController: UIViewController {
         loginButton.backgroundColor = .tangerine
         loginButton.layer.borderColor = UIColor.veryLightPinkTwo.cgColor
         loginButton.clipsToBounds = true
-        loginButton.setTitle(LS.Auth.LoginButton.title.localized(),
+        loginButton.setTitle(String.Auth.LoginButton.title.localized(),
                              for: .normal)
         loginButton.titleLabel?.font = .textStyle5
         loginButton.tintColor = .customWhite
@@ -108,7 +108,7 @@ final class LoginViewController: UIViewController {
         // Registration
         registrationButton.titleLabel?.font = .textStyle2
         registrationButton.tintColor = .windowsBlue
-        registrationButton.setTitle(LS.Auth.RegistrationButton.title.localized(),
+        registrationButton.setTitle(String.Auth.RegistrationButton.title.localized(),
                                     for: .normal)
         registrationButton.contentEdgeInsets = UIEdgeInsets(top: -1, left: 0, bottom: 1, right: 0) // else bug with button's height
     }
