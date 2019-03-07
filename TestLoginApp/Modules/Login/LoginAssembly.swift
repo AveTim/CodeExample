@@ -21,7 +21,7 @@ final class LoginAssembly {
         let view = storyBoard.instantiateInitialViewController() as! LoginViewController
         
         let presenter = LoginPresenter()
-        let interactor = LoginInteractor()
+        let interactor = LoginInteractor(networkService: NetworkServiceImpl())
         let router = LoginRouter()
         
         view.output = presenter
@@ -31,7 +31,6 @@ final class LoginAssembly {
         presenter.interactor = interactor
         
         interactor.output = presenter
-        interactor.networkService = NetworkServiceImpl()
         
         router.view = view
         

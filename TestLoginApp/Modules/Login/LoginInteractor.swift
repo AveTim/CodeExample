@@ -12,10 +12,10 @@ final class LoginInteractor {
     
     weak var output: LoginInteractorOutput!
 
-    var networkService: NetworkService!
+    var networkService: NetworkService
     
-    init() {
-        
+    init(networkService: NetworkService) {
+        self.networkService = networkService
     }
     
 }
