@@ -6,6 +6,12 @@
   Copyright © 2019 Heads and Hands. All rights reserved.
 */
 
+"Global.ok" = "ОК";
+"Global.space" = " ";
+"Global.error" = "Произошла ошибка";
+
+"Main.AuthButton.title" = "Авторизация";
+
 "Auth.title" = "Авторизация";
 "Auth.EnterEmail.title" = "Почта";
 "Auth.EnterEmail.placeholder" = "Введите email";
@@ -14,3 +20,11 @@
 "Auth.ForgotPasswordButton.title" = "Забыли пароль?";
 "Auth.LoginButton.title" = "Войти";
 "Auth.RegistrationButton.title" = "У меня еще нет аккаунта. Создать.";
+
+"Auth.Error.Email.incorrect" = "Введите корректный email";
+
+"Auth.Error.Password.incorrect" = "Введите корректный пароль";
+"Auth.Error.Password.toShort" = "Пароль должен быть длиннее 6 знаков.";
+"Auth.Error.Password.oneUppercase" = "Пароль должен содержать минимум одну заглавную букву.";
+"Auth.Error.Password.oneLowercase" = "Пароль должен содержать минимум одну строчную букву.";
+"Auth.Error.Password.oneDigit" = "Пароль должен содержать минимум одну цифру.";
