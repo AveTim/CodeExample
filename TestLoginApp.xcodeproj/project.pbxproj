@@ -12,6 +12,16 @@
 		224A316C22309B2800A103CD /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316B22309B2800A103CD /* String+Localization.swift */; };
 		224A316E2230A10200A103CD /* UIFont+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316D2230A10200A103CD /* UIFont+Styles.swift */; };
 		224A31702230A8A000A103CD /* UIColor+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A316F2230A8A000A103CD /* UIColor+Styles.swift */; };
+		224A317A2230B8F100A103CD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31732230B8F100A103CD /* LoginPresenter.swift */; };
+		224A317B2230B8F100A103CD /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31742230B8F100A103CD /* LoginRouter.swift */; };
+		224A317D2230B8F100A103CD /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31762230B8F100A103CD /* LoginProtocols.swift */; };
+		224A317E2230B8F100A103CD /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31772230B8F100A103CD /* LoginAssembly.swift */; };
+		224A317F2230B8F100A103CD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31782230B8F100A103CD /* LoginInteractor.swift */; };
+		224A318A2230BA0100A103CD /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31832230BA0100A103CD /* MainPresenter.swift */; };
+		224A318B2230BA0100A103CD /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31842230BA0100A103CD /* MainRouter.swift */; };
+		224A318D2230BA0100A103CD /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31862230BA0100A103CD /* MainProtocols.swift */; };
+		224A318E2230BA0100A103CD /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31872230BA0100A103CD /* MainAssembly.swift */; };
+		224A318F2230BA0100A103CD /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A31882230BA0100A103CD /* MainInteractor.swift */; };
 		22E2676422304D50004DB8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2676322304D50004DB8BB /* AppDelegate.swift */; };
 		22E2676622304D50004DB8BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2676522304D50004DB8BB /* MainViewController.swift */; };
 		22E2676922304D50004DB8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E2676722304D50004DB8BB /* Main.storyboard */; };
@@ -32,6 +42,16 @@
 		224A316B22309B2800A103CD /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		224A316D2230A10200A103CD /* UIFont+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Styles.swift"; sourceTree = "<group>"; };
 		224A316F2230A8A000A103CD /* UIColor+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Styles.swift"; sourceTree = "<group>"; };
+		224A31732230B8F100A103CD /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		224A31742230B8F100A103CD /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		224A31762230B8F100A103CD /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		224A31772230B8F100A103CD /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
+		224A31782230B8F100A103CD /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		224A31832230BA0100A103CD /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		224A31842230BA0100A103CD /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		224A31862230BA0100A103CD /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		224A31872230BA0100A103CD /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		224A31882230BA0100A103CD /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		22E2676022304D50004DB8BB /* TestLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2676322304D50004DB8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E2676522304D50004DB8BB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +99,20 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		224A31802230B99A00A103CD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				22E2677C223052D3004DB8BB /* Login.storyboard */,
+				224A31772230B8F100A103CD /* LoginAssembly.swift */,
+				224A31762230B8F100A103CD /* LoginProtocols.swift */,
+				224A31742230B8F100A103CD /* LoginRouter.swift */,
+				224A31782230B8F100A103CD /* LoginInteractor.swift */,
+				224A31732230B8F100A103CD /* LoginPresenter.swift */,
+				22E2677A22305134004DB8BB /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		22E2675722304D50004DB8BB = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				22E2677822304EAF004DB8BB /* Main */,
-				22E2677922304EBE004DB8BB /* Login */,
+				224A31802230B99A00A103CD /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -124,18 +158,14 @@
 			isa = PBXGroup;
 			children = (
 				22E2676722304D50004DB8BB /* Main.storyboard */,
+				224A31872230BA0100A103CD /* MainAssembly.swift */,
+				224A31862230BA0100A103CD /* MainProtocols.swift */,
+				224A31842230BA0100A103CD /* MainRouter.swift */,
+				224A31882230BA0100A103CD /* MainInteractor.swift */,
+				224A31832230BA0100A103CD /* MainPresenter.swift */,
 				22E2676522304D50004DB8BB /* MainViewController.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		22E2677922304EBE004DB8BB /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				22E2677C223052D3004DB8BB /* Login.storyboard */,
-				22E2677A22305134004DB8BB /* LoginViewController.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		22E2677E22305A1A004DB8BB /* Resources */ = {
@@ -283,12 +313,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E2677B22305134004DB8BB /* LoginViewController.swift in Sources */,
+				224A318B2230BA0100A103CD /* MainRouter.swift in Sources */,
+				224A318D2230BA0100A103CD /* MainProtocols.swift in Sources */,
+				224A318F2230BA0100A103CD /* MainInteractor.swift in Sources */,
 				224A316A22309A9F00A103CD /* LocalizationConstants.swift in Sources */,
 				224A316E2230A10200A103CD /* UIFont+Styles.swift in Sources */,
 				22E267A322307AED004DB8BB /* UIColor.swift in Sources */,
+				224A317E2230B8F100A103CD /* LoginAssembly.swift in Sources */,
+				224A317A2230B8F100A103CD /* LoginPresenter.swift in Sources */,
 				22E2676622304D50004DB8BB /* MainViewController.swift in Sources */,
+				224A317F2230B8F100A103CD /* LoginInteractor.swift in Sources */,
 				22E267A0223076C7004DB8BB /* SeparatorView.swift in Sources */,
 				22E2676422304D50004DB8BB /* AppDelegate.swift in Sources */,
+				224A318A2230BA0100A103CD /* MainPresenter.swift in Sources */,
+				224A318E2230BA0100A103CD /* MainAssembly.swift in Sources */,
+				224A317D2230B8F100A103CD /* LoginProtocols.swift in Sources */,
+				224A317B2230B8F100A103CD /* LoginRouter.swift in Sources */,
 				224A316C22309B2800A103CD /* String+Localization.swift in Sources */,
 				224A31702230A8A000A103CD /* UIColor+Styles.swift in Sources */,
 			);

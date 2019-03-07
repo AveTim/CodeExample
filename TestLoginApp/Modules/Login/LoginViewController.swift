@@ -9,6 +9,9 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
+    
+    // MARK: - Properties
+    var output: LoginViewOutput!
 
     // MARK: Outlets
     @IBOutlet private weak var scrollView: UIScrollView!
@@ -32,6 +35,8 @@ final class LoginViewController: UIViewController {
         setupScrollView()
         setupUI()
         setupKeyboard()
+        
+        output.viewIsReady()
     }
     
     override func viewDidLayoutSubviews() {
@@ -131,11 +136,7 @@ final class LoginViewController: UIViewController {
         
     }
     
-}
-
-// MARK: - Keyboard Hiding
-extension LoginViewController {
-    
+    // MARK: Keyboard scrolling
     @objc private func keyboardWillShow(notification: NSNotification) {
         guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
         let keyboardContentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
@@ -149,6 +150,11 @@ extension LoginViewController {
         scrollView.contentInset = UIEdgeInsets.zero
         scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
     }
+    
+}
+
+// MARK: - LoginViewInput
+extension LoginViewController: LoginViewInput {
     
 }
 

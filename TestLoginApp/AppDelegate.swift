@@ -18,13 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        let loginVC = UIStoryboard(name: "Login",
-                                   bundle: nil).instantiateInitialViewController() as! LoginViewController
-//        navigationController?.pushViewController(loginVC, animated: true)
+        let loginVC = LoginAssembly.assemble().view
         
-        let rootVC = UIStoryboard.init(name: "Main",
-                                       bundle: nil).instantiateInitialViewController() as! MainViewController
-        window.rootViewController = UINavigationController.init(rootViewController: rootVC)
+        let mainVC = MainAssembly.assemble().view
+        window.rootViewController = UINavigationController.init(rootViewController: mainVC)
         window.makeKeyAndVisible()
         self.window = window
         

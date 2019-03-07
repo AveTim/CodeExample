@@ -8,20 +8,27 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
+
+    var output: MainViewOutput!
 
     @IBOutlet private weak var authButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        output.viewIsReady()
     }
 
     @IBAction private func didTapAuth(_ sender: UIButton) {
-        let loginVC = UIStoryboard(name: "Login",
-                                   bundle: nil).instantiateInitialViewController() as! LoginViewController
+        let loginVC = LoginAssembly.assemble().view
         navigationController?.pushViewController(loginVC, animated: true)
     }
+    
+}
+
+// MARK: - MainViewInput
+extension MainViewController: MainViewInput {
     
 }
 
