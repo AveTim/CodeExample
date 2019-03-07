@@ -54,7 +54,7 @@ extension LoginPresenter: LoginViewOutput {
     }
     
     func didTapForgotPassword() {
-        
+        view.showMessage("Forgot password")
     }
     
     func didTapLogin(email: String?, password: String?) {
@@ -73,7 +73,7 @@ extension LoginPresenter: LoginViewOutput {
     }
     
     func didTapRegistration() {
-        interactor.loadWeather(query: "London")
+        view.showMessage("Registration")
     }
     
 }

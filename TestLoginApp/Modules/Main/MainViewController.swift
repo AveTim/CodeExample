@@ -17,11 +17,29 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
         output.viewIsReady()
     }
 
     @IBAction private func didTapAuth(_ sender: UIButton) {
         output.didTapAuth()
+    }
+    
+    private func setupUI() {
+        navigationItem.title = LS.Main.title.localized()
+        
+        authButton.isExclusiveTouch = true
+        authButton.backgroundColor = .tangerine
+        authButton.layer.borderColor = UIColor.veryLightPinkTwo.cgColor
+        authButton.clipsToBounds = true
+        authButton.setTitle(LS.Main.AuthButton.title.localized(),
+                             for: .normal)
+        authButton.titleLabel?.font = .textStyle5
+        authButton.tintColor = .customWhite
+        authButton.contentEdgeInsets = UIEdgeInsets.init(top: C.AuthButton.Insents.top,
+                                                          left: C.AuthButton.Insents.left,
+                                                          bottom: C.AuthButton.Insents.bottom,
+                                                          right: C.AuthButton.Insents.right)
     }
     
 }
@@ -31,3 +49,16 @@ extension MainViewController: MainViewInput {
     
 }
 
+// MARK: - Constraints
+private enum C {
+    
+    enum AuthButton {
+        enum Insents {
+            static let top: CGFloat = 13
+            static let right: CGFloat = 51
+            static let bottom: CGFloat = 13
+            static let left: CGFloat = 51
+        }
+    }
+    
+}

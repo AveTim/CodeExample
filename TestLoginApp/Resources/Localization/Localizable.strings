@@ -10,6 +10,7 @@
 "Global.space" = " ";
 "Global.error" = "Произошла ошибка";
 
+"Main.title" = "Тестовое задание";
 "Main.AuthButton.title" = "Авторизация";
 
 "Auth.title" = "Авторизация";

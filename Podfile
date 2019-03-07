@@ -6,6 +6,7 @@ target 'TestLoginApp' do
   use_frameworks!
 
   # Pods for TestLoginApp
-  
+  pod 'Moya', '~> 12.0'
+
 
 end

@@ -19,6 +19,8 @@ struct LS {
     
     // MARK: - Main
     struct Main {
+        static let title = "Main.title"
+        
         struct AuthButton {
             static let title = "Main.AuthButton.title"
         }
