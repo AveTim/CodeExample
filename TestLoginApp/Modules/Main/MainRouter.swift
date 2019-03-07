@@ -17,4 +17,9 @@ final class MainRouter {
 // MARK: - MainRouterInput
 extension MainRouter: MainRouterInput {
 
+    func goToLogin() {
+        let loginVC = LoginAssembly.assemble().view
+        view.navigationController?.pushViewController(loginVC,
+                                                      animated: true)
+    }
 }

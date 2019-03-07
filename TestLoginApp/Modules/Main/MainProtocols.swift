@@ -19,7 +19,7 @@ protocol MainInteractorOutput: class {
 
 // MARK: - Router
 protocol MainRouterInput: class {
-    
+    func goToLogin()
 }
 
 // MARK: View Controller
@@ -29,4 +29,5 @@ protocol MainViewInput: class {
 
 protocol MainViewOutput: class {
     func viewIsReady()
+    func didTapAuth()
 }

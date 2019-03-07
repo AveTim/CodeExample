@@ -31,6 +31,7 @@ final class LoginAssembly {
         presenter.interactor = interactor
         
         interactor.output = presenter
+        interactor.networkService = NetworkServiceImpl()
         
         router.view = view
         

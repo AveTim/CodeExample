@@ -25,6 +25,10 @@ extension MainPresenter: MainViewOutput {
         
     }
     
+    func didTapAuth() {
+        router.goToLogin()
+    }
+    
 }
 
 // MARK: - MainInteractorOutput

@@ -21,8 +21,7 @@ final class MainViewController: UIViewController {
     }
 
     @IBAction private func didTapAuth(_ sender: UIButton) {
-        let loginVC = LoginAssembly.assemble().view
-        navigationController?.pushViewController(loginVC, animated: true)
+        output.didTapAuth()
     }
     
 }

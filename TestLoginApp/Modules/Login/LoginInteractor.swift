@@ -12,6 +12,8 @@ final class LoginInteractor {
     
     weak var output: LoginInteractorOutput!
 
+    var networkService: NetworkService!
+    
     init() {
         
     }
@@ -21,4 +23,13 @@ final class LoginInteractor {
 // MARK: - LoginInteractorInput
 extension LoginInteractor: LoginInteractorInput {
 
+    func loadWeather(query: String) {
+        networkService.loadWeatherFor(query: query,
+                               successCallback: { [weak self] (weatherResponse) in
+                                self?.output.didLoadWeather(weatherResponse)
+            }, errorCallback: { [weak self] (error) in
+                self?.output.didReceivedAnError(error)
+        })
+    }
+    
 }

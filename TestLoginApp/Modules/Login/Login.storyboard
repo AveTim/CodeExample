@@ -109,11 +109,15 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="gmb-Ug-xD3" firstAttribute="top" secondItem="1z8-sd-5or" secondAttribute="top" id="0Ij-Jf-MGU"/>
+                                            <constraint firstItem="Tc8-HU-Xou" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1z8-sd-5or" secondAttribute="leading" id="4lo-wP-aIl"/>
                                             <constraint firstAttribute="bottom" secondItem="Tc8-HU-Xou" secondAttribute="bottom" constant="21" id="5IL-WW-Omw"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="72k-Xm-p8N" secondAttribute="trailing" id="CKz-YB-7ag"/>
                                             <constraint firstAttribute="trailing" secondItem="gmb-Ug-xD3" secondAttribute="trailing" id="Ptg-Os-M8L"/>
                                             <constraint firstItem="72k-Xm-p8N" firstAttribute="top" secondItem="gmb-Ug-xD3" secondAttribute="bottom" constant="34" id="Txd-L6-kcK"/>
                                             <constraint firstItem="72k-Xm-p8N" firstAttribute="centerX" secondItem="1z8-sd-5or" secondAttribute="centerX" id="YYT-QI-jaM"/>
+                                            <constraint firstItem="72k-Xm-p8N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1z8-sd-5or" secondAttribute="leading" id="ZXQ-qw-Zff"/>
                                             <constraint firstItem="gmb-Ug-xD3" firstAttribute="leading" secondItem="1z8-sd-5or" secondAttribute="leading" id="mjA-x9-vLk"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tc8-HU-Xou" secondAttribute="trailing" id="sRF-2G-znL"/>
                                             <constraint firstItem="Tc8-HU-Xou" firstAttribute="top" secondItem="72k-Xm-p8N" secondAttribute="bottom" constant="21" id="uz2-SU-WfJ"/>
                                             <constraint firstItem="Tc8-HU-Xou" firstAttribute="centerX" secondItem="1z8-sd-5or" secondAttribute="centerX" id="yCj-Bi-TfA"/>
                                         </constraints>
@@ -121,19 +125,23 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="1z8-sd-5or" secondAttribute="trailing" constant="15" id="0tg-Em-4pF"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1z8-sd-5or" secondAttribute="bottom" id="A8n-n7-re9"/>
                                     <constraint firstItem="1z8-sd-5or" firstAttribute="leading" secondItem="miN-Ez-QU5" secondAttribute="leading" constant="15" id="T1V-wx-aMg"/>
                                     <constraint firstItem="1z8-sd-5or" firstAttribute="centerX" secondItem="miN-Ez-QU5" secondAttribute="centerX" id="WZf-0Z-Dit"/>
-                                    <constraint firstAttribute="bottom" secondItem="1z8-sd-5or" secondAttribute="bottom" constant="24" id="jiR-Pj-bEw"/>
-                                    <constraint firstItem="1z8-sd-5or" firstAttribute="top" relation="greaterThanOrEqual" secondItem="miN-Ez-QU5" secondAttribute="top" constant="24" id="pum-dm-hV5"/>
+                                    <constraint firstItem="1z8-sd-5or" firstAttribute="top" relation="greaterThanOrEqual" secondItem="miN-Ez-QU5" secondAttribute="top" id="csa-wT-xv7"/>
+                                    <constraint firstAttribute="bottom" secondItem="1z8-sd-5or" secondAttribute="bottom" priority="250" constant="24" id="jiR-Pj-bEw"/>
                                     <constraint firstItem="1z8-sd-5or" firstAttribute="centerY" secondItem="miN-Ez-QU5" secondAttribute="centerY" id="sQI-3S-xFv"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="miN-Ez-QU5" firstAttribute="centerY" secondItem="VCe-JV-e1E" secondAttribute="centerY" id="2Fc-tN-4vM"/>
+                            <constraint firstItem="miN-Ez-QU5" firstAttribute="centerX" secondItem="VCe-JV-e1E" secondAttribute="centerX" id="6Kc-ag-uvc"/>
+                            <constraint firstItem="miN-Ez-QU5" firstAttribute="top" secondItem="VCe-JV-e1E" secondAttribute="top" priority="250" id="LNe-sS-3Mq"/>
                             <constraint firstItem="miN-Ez-QU5" firstAttribute="leading" secondItem="VCe-JV-e1E" secondAttribute="leading" id="e2J-YY-MFT"/>
-                            <constraint firstItem="VCe-JV-e1E" firstAttribute="bottom" secondItem="miN-Ez-QU5" secondAttribute="bottom" id="edM-2i-nMq"/>
-                            <constraint firstItem="miN-Ez-QU5" firstAttribute="top" secondItem="VCe-JV-e1E" secondAttribute="top" id="qar-mi-SaT"/>
+                            <constraint firstItem="VCe-JV-e1E" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="miN-Ez-QU5" secondAttribute="bottom" id="edM-2i-nMq"/>
+                            <constraint firstItem="miN-Ez-QU5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Gui-Gf-yWn" secondAttribute="top" priority="750" constant="20" id="qar-mi-SaT"/>
                             <constraint firstItem="VCe-JV-e1E" firstAttribute="trailing" secondItem="miN-Ez-QU5" secondAttribute="trailing" id="yMf-Pf-Gop"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VCe-JV-e1E"/>

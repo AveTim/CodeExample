@@ -62,6 +62,7 @@ final class LoginViewController: UIViewController {
         emailTitleLabel.font = UIFont.textStyle4
         emailTitleLabel.textColor = .warmGrey
         
+        emailTextField.keyboardType = .emailAddress
         emailTextField.autocorrectionType = .no
         emailTextField.font = UIFont.textStyle3
         emailTextField.attributedPlaceholder = NSAttributedString(string: LS.Auth.EnterEmail.placeholder.localized(),
@@ -125,21 +126,30 @@ final class LoginViewController: UIViewController {
     
     // MARK: Actions
     @IBAction private func didTapForgotPassword(_ sender: UIButton) {
-        
+        output.didTapForgotPassword()
     }
     
     @IBAction private func didTapLogin(_ sender: UIButton) {
-        
+        output.didTapLogin(email: emailTextField.text,
+                           password: passwordTextField.text)
     }
     
     @IBAction private func didTapRegistration(_ sender: UIButton) {
-        
+        output.didTapRegistration()
     }
     
     // MARK: Keyboard scrolling
     @objc private func keyboardWillShow(notification: NSNotification) {
         guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
-        let keyboardContentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+        
+        let bottomInset: CGFloat
+        if #available(iOS 11, *) {
+            bottomInset = keyboardSize.height
+        } else {
+            bottomInset = keyboardSize.height - topDistance
+        }
+        
+        let keyboardContentInsets = UIEdgeInsets(top: 0, left: 0, bottom: bottomInset, right: 0)
         scrollView.contentInset = keyboardContentInsets
         scrollView.scrollIndicatorInsets = keyboardContentInsets
         
