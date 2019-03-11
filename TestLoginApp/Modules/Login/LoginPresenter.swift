@@ -15,8 +15,17 @@ final class LoginPresenter {
     var router: LoginRouterInput!
     
     private let minimumPasswordLenght = 6
+    
+    private func validate(email: String?) -> (isValid: Bool, errorMessage: String) {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
-    private func validatePassword(_ password: String?) -> (isValid: Bool, errorMessage: String) {
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let isValid = emailTest.evaluate(with: email)
+        return (isValid: isValid,
+                errorMessage: isValid ? "" : String.Auth.Error.incorrectEmail.localized())
+    }
+    
+    private func validate(password: String?) -> (isValid: Bool, errorMessage: String) {
         var errorMessage: String = ""
         let password = password ?? ""
         var isPasswordValid = true
@@ -56,13 +65,13 @@ extension LoginPresenter: LoginViewOutput {
     }
     
     func didTapLogin(email: String?, password: String?) {
-        guard let email = email,
-              !email.isEmpty else {
-            view.showMessage(String.Auth.Error.incorrectEmail.localized())
+        let emailResult = validate(email: email)
+        guard emailResult.isValid else {
+            view.showMessage(emailResult.errorMessage)
             return
         }
         
-        let result = validatePassword(password)
+        let result = validate(password: password)
         guard result.isValid else {
             view.showMessage(result.errorMessage)
             return
